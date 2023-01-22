@@ -10,7 +10,7 @@ async function RegisterFunction(event) {
     for (let i = 0; i < all_input_tags.length - 1; i++) {
       userObj[all_input_tags[i].id] = all_input_tags[i].value;
     }
-    let register_request = await fetch("http://localhost:4500/users/register", {
+    let register_request = await fetch("https://fine-puce-basket-clam-cap.cyclic.app/users/register", {
       method: "POST",
       body: JSON.stringify(userObj),
       headers: {
