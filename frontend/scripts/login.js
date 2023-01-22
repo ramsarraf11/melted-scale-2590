@@ -9,7 +9,7 @@ async function LoginFunction(event){
         for(let i=0;i<all_login_input.length-1;i++){
             obj[all_login_input[i].id] = all_login_input[i].value;
         }
-        let login_request = await fetch("http://localhost:4500/users/login",{
+        let login_request = await fetch("https://fine-puce-basket-clam-cap.cyclic.app/users/login",{
             method : "POST",
             body : JSON.stringify(obj),
             headers : {
